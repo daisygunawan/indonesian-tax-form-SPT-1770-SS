@@ -1,0 +1,264 @@
+.body-starting {
+  margin: 0;
+  padding: 0;
+  background-color: #0c5ead;
+  color: #fafafa;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-page {
+  margin: 0;
+  color: #fafafa;
+  background-color: #0c5ead;
+  height: 100vh;
+  display: block; /* Default block layout for normal flow */
+}
+.logo {
+  margin-bottom: -40px;
+}
+.text-header {
+  text-align: left;
+  font-weight: bold;
+  color: white;
+  background-color: #01285d;
+  padding: 10px 20px;
+}
+.text-container {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: #01285d;
+  padding: 10px 20px;
+}
+.text-container h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+.text-container h2 {
+  font-size: 20px;
+  margin-top: 0px;
+  line-height: 1.2;
+}
+.container {
+  width: 1200px;
+  border: 1px solid white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  background-color: #01285d;
+  padding: 40px;
+  box-shadow: #001731 0px 0px 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+.form-control {
+  background-color: #01285d;
+  color: #fafafa;
+  border-color: rgba(255, 255, 255, 0.499);
+}
+.form-control:focus {
+  background-color: #00234a;
+  color: #fafafa;
+  border-color: #fab715;
+  box-shadow: 0px 0px 1px #fab715; /* Smaller, less intense glow */
+}
+
+.form-control::placeholder {
+  color: #fafafa;
+  opacity: 0.6;
+}
+
+.form-label {
+  color: white;
+  opacity: 0.8;
+  font-size: 1em;
+}
+.label-input-group:focus-within .form-label {
+  color: #ffffff; /* Change label color when input is focused */
+  font-weight: bold; /* Optional: Make it bold */
+  opacity: 1;
+}
+
+.form-check-input {
+  --bs-form-check-bg: #01285d;
+}
+
+.form-check-input:checked {
+  background-color: #fab715;
+}
+.form-select {
+  background-color: #002147;
+  color: #fafafa;
+  border-color: rgba(255, 255, 255, 0.499);
+}
+
+.form-control:focus {
+  background-color: #01285d;
+  color: #fafafa;
+  border-color: #ffcc00; /* Bright yellow border */
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Soft glowing effect */
+}
+a {
+  color: #fafafa;
+  text-decoration: underline;
+}
+a:hover {
+  color: #fab715;
+}
+.btn-primary {
+  margin-top: 20px;
+  --bs-btn-color: #fafafa;
+  --bs-btn-bg: #fab715;
+  --bs-btn-hover-color: #fafafa;
+  --bs-btn-hover-bg: #e6a818;
+  --bs-btn-border-color: #fab715;
+  --bs-btn-hover-border-color: #e6a818;
+}
+.body-page {
+  padding-top: 200px; /* Adjust to match header + progress bar height */
+}
+.header {
+  background-color: #01285d;
+  box-shadow: #001731 0px 0px 20px;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  position: fixed; /* Make it stick */
+  top: 0; /* Stick at the very top */
+  left: 0; /* Align to left */
+  width: 100%; /* Stretch across full width */
+  z-index: 1000; /* Ensure it stays on top */
+}
+.header img {
+  margin-right: 15px;
+}
+.header h1 {
+  font-size: 30px;
+}
+.header h2 {
+  font-size: 25px;
+}
+.progressbarstyle {
+  position: fixed;
+  top: 132px; /* Ensure it's below the header */
+  left: 0;
+  width: 100%;
+  height: 15px; /* Set a visible height */
+  background-color: rgba(255, 255, 255, 0.2); /* Light grey background */
+  z-index: 1000; /* Keep it above other elements */
+}
+
+.progressbarstyle .progress-bar {
+  height: 100%;
+  background-color: #fab715 !important; /* Ensure progress bar color is visible */
+}
+
+.form-section {
+  background-color: #01285d;
+  padding: 15px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+.form-container {
+  background-color: #01285d !important; /* Dark blue background */
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 1200px;
+  max-width: 1500px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-top: -10px; /* Adds space between progress bar and form */
+  margin-bottom: 30px;
+}
+.form-container h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.form-container h2 {
+  font-size: 18px;
+}
+.starting-container {
+  height: 750px;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px; /* Adjust spacing from form */
+}
+.pagination .page-item .page-link {
+  background-color: #01285d; /* Set background color */
+  color: white; /* Set text (numbers & arrows) color */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Border for better visibility */
+}
+
+/* Change color when hovering over pagination buttons */
+.pagination .page-item .page-link:hover {
+  background-color: #02347c; /* Slightly lighter blue for hover effect */
+  color: white;
+}
+
+/* Style for active page */
+.pagination .page-item.active .page-link {
+  background-color: #fab715; /* Highlighted color for active page */
+  color: #01285d; /* Dark blue text on active */
+  border-color: #fab715;
+}
+/* Match Tahun Pajak color to the rest of the form */
+.input-group-text {
+  background-color: #01285d; /* Dark blue background */
+  color: #fafafa; /* White text color */
+  border-color: rgba(255, 255, 255, 0.3); /* Light border */
+}
+
+/* Match the dropdown (select) field */
+.form-select {
+  background-color: #01285d; /* Dark blue to match the input fields */
+  color: #fafafa; /* White text */
+  border-color: rgba(255, 255, 255, 0.3); /* Light border */
+}
+.form-check-container {
+  display: flex;
+  gap: 50px; /* Optional: Adjusts the space between the radios */
+  margin-bottom: 10px;
+}
+.form-container p {
+  opacity: 0.8;
+}
+/* Style the file input to match the rest of the form */
+.form-control-file {
+  background-color: #01285d; /* Match background color */
+  color: #fafafa; /* Match text color */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  padding: 5px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.form-control-file:focus {
+  background-color: #00234a; /* Change on focus */
+  color: #fafafa;
+  border-color: #fab715;
+  box-shadow: 0px 0px 1px #fab715;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+}
+.btn-primary.submit {
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  /* Removed margin-right to keep the button next to the pagination */
+}
